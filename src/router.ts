@@ -9,6 +9,11 @@ router.post("/v1/chat/completions", async (ctx) => {
   const headers = {
     "Content-Type": ctx.request.headers.get("Content-Type") || "",
     "Authorization": ctx.request.headers.get("Authorization") || "",
+    "Accept": ctx.request.headers.get("Accept") || "",
+    "Accept-Encoding": ctx.request.headers.get("Accept-Encoding") || "",
+    "Origin": ctx.request.headers.get("Origin") || "",
+    "Referer": ctx.request.headers.get("Referer") || "",
+    "User-Agent": ctx.request.headers.get("User-Agent") || "",
   };
   const body = await ctx.request.body({ type: "text" }).value;
   const bodyObj = ignoreErr(() => JSON.parse(body));
