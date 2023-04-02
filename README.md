@@ -1,3 +1,7 @@
-# starter-deno
+# chatgpt-api-proxy
 
-A [Deno](https://deno.land/) stater template.
+A proxy server for [ChatGPT API](https://platform.openai.com/docs/api-reference/chat).
+
+## License
+
+MIT
